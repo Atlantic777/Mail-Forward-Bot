@@ -1,12 +1,13 @@
 #!/usr/bin/python
 import imaplib, smtplib, email
+import secret as s
 
 class Mailbot():
 	def __init__(self):
-		self.username    = ""
-		self.password    = ""
-		self.from_field  = ""
-		self.to_field    = ""
+		self.username    = s.username
+		self.password    = s.password
+		self.from_field  = s.from_field
+		self.to_field    = s.to_field
 
 		self.imap_server = "imap.gmail.com"
 		self.imap_port   = 993

@@ -1,5 +1,6 @@
 *.py[cod]
 *.swp
+secret.py
 
 # C extensions
 *.so
